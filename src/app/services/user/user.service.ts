@@ -21,6 +21,6 @@ export class UserService {
   }
 
   signin(user: any): Observable<any> {
-    return this.http.post(this.BASE_URL + "signin", user).pipe(map((response: any) => response))    
+    return this.http.post(this.BASE_URL + "signin", user).pipe(map((response: any) => response))
   }
 }
