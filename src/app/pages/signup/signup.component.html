@@ -1,0 +1,14 @@
+<form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+    <label for="email">Email: </label>
+    <input type="text" name="email" formControlName="email">
+    <p>{{emailInfoValue}}</p>
+    <label for="username">Username: </label>
+    <input type="text" name="username" formControlName="username">
+    <label for="password">Password: </label>
+    <input type="password" name="password" formControlName="password">
+    <p>{{passwordInfoValue}}</p>
+    <label for="re_password">Repeat password: </label>
+    <input type="password" name="re_password" formControlName="re_password">
+    <p>{{rePasswordInfoValue}}</p>
+    <button type="submit">Sign Up</button>
+</form>

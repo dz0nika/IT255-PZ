@@ -1,0 +1,8 @@
+svg:hover {
+    fill: #fbdb15;
+    transition: .3s all;
+}
+
+.added {
+    fill: #fbdb15;
+}
