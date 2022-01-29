@@ -1,9 +1,11 @@
-<button (click)="signOut()">Sign Out</button>
 <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        <h1>CoinMarket</h1>
-  
+      <div class="col-xs-12 mt-5">
+        <div class="">
+          <h1 class='p-2'>CoinMarket</h1>
+          <button (click)="signOut()" class='ml-auto'>Sign Out</button>
+        </div>
+
         <input
           type="text"
           placeholder="Search a Coin"
@@ -12,7 +14,7 @@
           (keyup)="searchCoin()"
           [(ngModel)]="searchText"
         />
-  
+
         <table class="table table-dark">
           <thead>
             <tr>
@@ -21,7 +23,7 @@
               </td>
             </tr>
           </thead>
-  
+
           <tbody>
             <tr *ngFor="let coin of filteredCoints; let i = index">
               <td>{{ i + 1 }}</td>
@@ -36,7 +38,7 @@
                 <span class="ms-3 text-muted text-uppercase">{{ coin.symbol }}</span>
               </td>
               <td>{{ coin.current_price.toLocaleString() }}</td>
-  
+
               <td
                 [ngClass]="
                   coin.price_change_percentage_24h > 0
@@ -58,4 +60,3 @@
       </div>
     </div>
   </div>
-  

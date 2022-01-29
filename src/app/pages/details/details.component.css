@@ -1,0 +1,36 @@
+.signleCoinDiv {
+  background-color: inherit;
+}
+
+.signleCoinDiv .title{
+  margin-left: 250px;
+}
+
+.signleCoinDiv .singleCoin {
+  margin-top: 20px;
+  max-width: 1000px;
+  background-color: #212529;
+  border-radius: 15px;
+  border: 2px solid white;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.signleCoinDiv .singleCoin .text {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.signleCoinDiv .description p {
+  margin-top: 15px;
+  margin-left: 260px;
+  margin-right: 260px;
+  background-color: #212529;
+  border-radius: 15px;
+  border: 2px solid white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

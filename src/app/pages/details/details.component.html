@@ -1,1 +1,22 @@
-<p></p>
+<div class="signleCoinDiv">
+  <h1 class="p-2 m-10 title">CoinMarket</h1>
+  <div class="m-20 d-flex mx-auto singleCoin">
+    <img
+      [src]="coin.images[2]"
+      alt="{{ coin.name }}"
+      width="250px"
+      height='100%'
+    />
+    <div class="text">
+      <h1>ID: {{ coin.id }}</h1>
+      <h3>BASE: {{ coin.tickers[0].base }}</h3>
+      <h5>PRICE: {{ coin.tickers[0].last }} USD</h5>
+      <h5>VOLUME: {{ coin.tickers[0].volume }} moved in the last 24H</h5>
+      <h5>TRANSFER: 1 {{ coin.tickers[0].base }} is equal to {{ coin.tickers[0].last }} USD</h5>
+    </div>
+  </div>
+  <div class="m-20 d-flex mx-auto description">
+    <p>DESCRIPTION: {{ coin.description }}</p>
+  </div>
+</div>
+

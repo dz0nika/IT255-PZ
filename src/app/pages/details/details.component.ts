@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Coin } from 'src/app/models/coin/coin';
 import { Ticker } from 'src/app/models/coin/ticker/ticker';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-details',
@@ -14,7 +15,7 @@ export class DetailsComponent implements OnInit {
   api: string
   coin: Coin
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private router: Router) {
     this.coinId = window.location.href.split('/').pop() || 'bitcoin'
     this.api = `https://api.coingecko.com/api/v3/coins/${this.coinId}?localization=false&market_data=false&community_data=false&developer_data=false&tickers=true`
   }
@@ -51,5 +52,4 @@ export class DetailsComponent implements OnInit {
 
     return new Ticker(data.base, data.target, data.last, data.volume, converted_last)
   }
-
 }

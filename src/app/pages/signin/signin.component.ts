@@ -51,4 +51,7 @@ export class SigninComponent implements OnInit {
     this.passwordInfoValue = ''
   }
 
+  signUp(): void {
+    this.router.navigate(["/signup"])
+  }
 }

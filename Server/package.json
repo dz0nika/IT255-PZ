@@ -1,5 +1,5 @@
 {
-  "name": "movietimeserver",
+  "name": "cryptoapp",
   "version": "1.0.0",
   "description": "Test",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "nodemon server.js",
     "default-start": "node server.js"
   },
-  "author": "Milan 4101",
+  "author": "Nikola 4074",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",

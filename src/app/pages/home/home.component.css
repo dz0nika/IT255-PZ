@@ -6,3 +6,16 @@ svg:hover {
 .added {
     fill: #fbdb15;
 }
+
+button {
+  position: relative;
+  padding: 10px 20px;
+  color: #183d3f;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  letter-spacing: 4px;
+  border-radius: 15px;
+}
